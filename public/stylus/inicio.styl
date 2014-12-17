@@ -20,6 +20,10 @@ icomoon-font(color,icon,size)
 	content icon
 	font-size size
 	vertical-align bottom
+font(size,color,type)
+	color color
+	font-size size
+	font-weight type
 	
 /*** 	clases de inconos 	***/
 .icon-location:before
@@ -30,21 +34,119 @@ icomoon-font(color,icon,size)
 	icomoon-font(#FFF,'\e600',1.3em)
 	
 /*** 	clases generales 	***/
+.contenido_centrado
+	margin 0 auto
+	width 70%
+.float_left
+	float left
+.float_right
+	float right
+.justificado
+	text-align justify
 .posicion_fija 
 	position fixed
 .texto_centrado
 	text-align center
 	
 html
-	background url(../img/background_mariachi.jpg) no-repeat center center fixed
+	/*background url(../img/background_mariachi.jpg) no-repeat center center fixed*/
 	background-size cover
 #contenedor
-	background #FFF
-	height 500px
 	position relative
 	z-index 200
+	#contacto 
+		background #FFF
+		&-contenedor
+			margin 0 auto
+			overflow hidden
+			padding-bottom 50px
+			width 70%
+		&-form
+			background #f1f1f1
+			border-radius 10px
+			box-shadow 2px 2px 10px
+			padding 10px 20px
+			overflow hidden
+			width 55%
+			&-btn
+				background #3388cc
+				border 1px solid #3388cc
+				padding 10px 20px
+				transition .6s
+				font(1em,#FFF,bold)
+				&:hover
+					background #76aadc
+			&-tbl
+				border-collapse initial
+				border-spacing 15px 25px
+				width 100%
+				caption
+					font-size 1.3em
+					font-weight bold
+				tbody
+					tr
+						td
+							input
+							textarea
+								border 1px solid #999
+								border-radius 3px
+								box-sizing border-box
+								padding 6px 10px
+								width 100%
+							textarea
+								height 90px
+								resize none
+		&-informacion
+			width 35%
+			&-mapa
+				height 150px
+				width 100%
+			&-telefonos
+				list-style none
+	#repertorio
+		background rgba(0,0,0,.7)
+		padding 3em 0
+		&-contenedor
+			display flex
+			flex-wrap wrap
+			margin 0 auto
+			width 70%
+			font(1em,#FFF,normal)
+			ul
+				background #FFF
+				border-radius 5px
+				box-shadow 1px 1px 5px
+				list-style none
+				padding 10px 15px 
+				margin auto
+				li
+					font(.8em,#696969,normal)
+					&:before
+						content '♪ '
+				span
+					display block
+					text-align center
+					font(1.2em,#000,bold)
+					hr
+						border 1px solid #000
+	#footer
+		background #33363b
+		border-top 2px solid #05A2C1
+		p
+			margin 0
+			padding 20px 0
+			text-align center
+			font(.8em,#FFF,bold)
+#fondo_secundario
+	background url('../img/background_mariachi_content.jpg') no-repeat center center fixed
+	background-size cover
+	overflow hidden
+	position fixed
+	width 100%
+	z-index 50
 #presentacion
 	background rgba(0,0,0,.6)
+	//background #FFF
 	color #FFF
 	overflow hidden
 	position fixed
@@ -57,10 +159,7 @@ html
 		width 90%
 		>*
 			display inline-block
-		&-direccion
-			float right
 		&-telefonos
-			float left
 			ul
 				list-style none
 				padding 0

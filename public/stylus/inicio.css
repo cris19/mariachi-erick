@@ -216,6 +216,12 @@ th {
   vertical-align: bottom;
 }
 /*** 	clases generales 	***/
+.float_left {
+  float: left;
+}
+.float_right {
+  float: right;
+}
 .posicion_fija {
   position: fixed;
 }
@@ -223,23 +229,124 @@ th {
   text-align: center;
 }
 html {
-  background: url("../img/background_mariachi.jpg") no-repeat center center fixed;
+/*background url(../img/background_mariachi.jpg) no-repeat center center fixed*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+}
+#contenedor {
+  background: #fff;
+  position: relative;
+  z-index: 200;
+}
+#contenedor-secundario {
+  margin: 0 auto;
+  width: 70%;
+}
+#contenedor-secundario #contacto {
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+#contenedor-secundario #contacto-form {
+  background: #f1f1f1;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  overflow: hidden;
+  width: 60%;
+}
+#contenedor-secundario #contacto-form-btn {
+  background: #38c;
+  border: 1px solid #38c;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  -ms-transition: 0.6s;
+  transition: 0.6s;
+}
+#contenedor-secundario #contacto-form-btn:hover {
+  background: #76aadc;
+}
+#contenedor-secundario #contacto-form-tbl {
+  border-collapse: initial;
+  border-spacing: 15px 25px;
+  width: 100%;
+}
+#contenedor-secundario #contacto-form-tbl caption {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+#contenedor-secundario #contacto-form-tbl tbody tr td input,
+#contenedor-secundario #contacto-form-tbl tbody tr td textarea {
+  border: 1px solid #999;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 6px 10px;
+  width: 100%;
+}
+#contenedor-secundario #contacto-form-tbl tbody tr td textarea {
+  height: 90px;
+  resize: none;
+}
+#contenedor-secundario #contacto-informacion {
+  width: 35%;
+}
+#contenedor-secundario #contacto-informacion-mapa {
+  height: 150px;
+  width: 100%;
+}
+#contenedor-secundario #contacto-informacion-telefonos {
+  list-style: none;
+}
+#contenedor #footer {
+  background: #33363b;
+}
+#contenedor #footer p {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: bold;
 }
 #presentacion {
   background: rgba(0,0,0,0.6);
   color: #fff;
   overflow: hidden;
-  position: relative;
+  position: fixed;
+  z-index: 100;
+}
+#presentacion-contacto {
+  bottom: 20px;
+  overflow: hidden;
+  padding: 0 5%;
+  position: absolute;
+  width: 90%;
+}
+#presentacion-contacto >* {
+  display: inline-block;
+}
+#presentacion-contacto-telefonos ul {
+  list-style: none;
+  padding: 0;
+}
+#presentacion-contacto-telefonos ul li {
+  margin-top: 0.5em;
 }
 #presentacion-frase {
   font-size: 1.2em;
   margin: 40px auto 0 !important;
-  width: 70%;
+  width: 50%;
 }
 #presentacion-titulo {
   font-size: 4em;
   margin-top: 4.3em;
+  text-shadow: 2px 2px #000;
 }
