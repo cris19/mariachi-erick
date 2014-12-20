@@ -37,6 +37,8 @@ font(size,color,type)
 .contenido_centrado
 	margin 0 auto
 	width 70%
+.float_center
+	margin 0 auto
 .float_left
 	float left
 .float_right
@@ -47,7 +49,29 @@ font(size,color,type)
 	position fixed
 .texto_centrado
 	text-align center
-	
+
+/*** 	paleta de colores 	***/
+verde_A = #96CD56
+verde_B = #55A938
+verde_C = #208240
+verde_D = #0E5B56
+
+gris_A = #F7F7F7
+gris_AA = #F5F5F5
+gris_B = #EAEAEA
+
+melon = #E2947D
+.backgroundVerde_A
+	background verde_A
+.backgroundVerde_B
+	background verde_B
+.backgroundVerde_C
+	background verde_C
+.backgroundVerde_D
+	background verde_D
+
+.nota
+	font(.7em,#696969,normal)
 html
 	/*background url(../img/background_mariachi.jpg) no-repeat center center fixed*/
 	background-size cover
@@ -57,10 +81,8 @@ html
 	#contacto 
 		background #FFF
 		&-contenedor
-			margin 0 auto
 			overflow hidden
 			padding-bottom 50px
-			width 70%
 		&-form
 			background #f1f1f1
 			border-radius 10px
@@ -103,14 +125,74 @@ html
 				width 100%
 			&-telefonos
 				list-style none
+				li:before
+					color #000 !important
+					margin-top .5em
+	#precios
+		background #FFF
+		&-contenedor
+			padding 70px 0
+			&-tbl
+				margin-bottom 20px
+				margin-top 50px
+				position relative
+				width 70%
+				tbody
+					tr
+						&:nth-child(even)
+							background #F5F5F5
+						td
+							position relative
+							&:first-child
+								padding 10px 20px
+								font(1em,#FFF,normal)
+								&.backgroundVerde_A
+									.muesca
+										border-left 30px solid verde_A
+								&.backgroundVerde_B
+									.muesca
+										border-left 30px solid verde_B
+								&.backgroundVerde_C
+									.muesca
+										border-left 30px solid verde_C
+								&.backgroundVerde_D
+									.muesca
+										border-left 30px solid verde_D
+							span
+								display block
+							.muesca
+								border-top 28px solid transparent
+								border-right 0px solid transparent 
+								border-bottom 28px solid transparent 
+								bottom 0
+								position absolute
+								right -30px
+				tfoot
+					tr
+						td
+							.seleccionado-footer
+								bottom 0
+								box-shadow 0 3px 10px
+								position absolute 
+								top 42px
+								width 33.4%
+				thead
+					tr
+						td
+							position relative
+							width 30%
+							font(1.1em,#696969,bold)
+							.seleccionado-heder
+								background gris_B
+								border-radius 10px 10px 0 0
+								box-shadow 0 0 10px
+								padding 10px 0
 	#repertorio
-		background rgba(0,0,0,.7)
+		background rgba(0,0,0,.6)
 		padding 3em 0
 		&-contenedor
 			display flex
 			flex-wrap wrap
-			margin 0 auto
-			width 70%
 			font(1em,#FFF,normal)
 			ul
 				background #FFF
@@ -129,6 +211,22 @@ html
 					font(1.2em,#000,bold)
 					hr
 						border 1px solid #000
+	#somos
+		background melon
+		position relative
+		&-contenedor
+			padding 4em 0
+			&-header
+				width 100
+		&-flecha
+			border-bottom 0
+			border-left 100px solid transparent
+			border-right 100px solid transparent
+			border-top 70px solid melon
+			bottom -70px
+			left 45%
+			position absolute
+			width 0
 	#footer
 		background #33363b
 		border-top 2px solid #05A2C1
@@ -140,16 +238,18 @@ html
 #fondo_secundario
 	background url('../img/background_mariachi_content.jpg') no-repeat center center fixed
 	background-size cover
+	display none
 	overflow hidden
 	position fixed
 	width 100%
-	z-index 50
+	z-index 150
 #presentacion
 	background rgba(0,0,0,.6)
 	//background #FFF
 	color #FFF
 	overflow hidden
 	position fixed
+	width 100%
 	z-index 100
 	&-contacto
 		bottom 20px
@@ -167,10 +267,15 @@ html
 					margin-top .5em
 	&-frase
 		font-size 1.2em
-		margin 40px auto 0 !important
+		margin 5em auto 0 !important
 		width 50%
+	&-subtitulo
+		font-size 2.3em
+		margin-top 7.3em
+		margin-bottom 0
+		text-shadow 2px 2px #000
 	&-titulo
 		font-size 4em
-		margin-top 4.3em
+		margin-top 0
 		text-shadow 2px 2px #000
 	

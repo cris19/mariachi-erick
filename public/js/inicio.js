@@ -46,15 +46,11 @@ $(function(){
 	$(window).on('scroll',function(e){
 		var topWindow     = $(this).scrollTop(),
 			topContenedor = $('#contenedor').offset().top;
-			console.log((topWindow + 100) > topContenedor);
-		if( (topWindow + 10) > topContenedor ) 
-		{
-			$('#fondo_secundario').css({'z-index' : 150 });
-		} 
-		else
-		{
-			$('#fondo_secundario').css({'z-index' : 50 });
-		}
+
+		var display = (topWindow + 10) > topContenedor ? 'block' : 'none';
+		
+		$('#fondo_secundario').css({'display' : display });
+		
 	})
 
 });

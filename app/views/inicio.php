@@ -10,14 +10,16 @@
 </head>
 <body>
 	<section id="presentacion">
-		<h1 id="presentacion-titulo" class="texto_centrado">Título de la seccion</h1>
-		<p id="presentacion-frase" class="texto_centrado">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum cum asperiores quas minus quod quo, rerum aliquam iste, neque explicabo natus fuga ratione magni nemo sequi, officiis quam eum in!</p>
+		<h2 id="presentacion-subtitulo" class="texto_centrado">MARIACHI</h2>
+		<h1 id="presentacion-titulo" class="texto_centrado">MIL SOLES</h1>
+		<p id="presentacion-frase" class="texto_centrado">La música de mariachi es el arte más directo, entra<br />por el oído y va al corazón.</p>
 
 		<section id="presentacion-contacto">
 			<div id="presentacion-contacto-telefonos" class="float_left">
 				<ul>
-					<li class="icon-phone"> (55) 5555 5555</li>
-					<li class="icon-mobile"> (044) 55 5555 5555</li>
+					<li class="icon-phone">  (55) 6712 2398</li>
+					<li class="icon-mobile"> (044) 55 6620 0868</li>
+					<li class="icon-mobile"> (044) 55 3101 9665</li>
 				</ul>
 			</div>
 			<div id="presentacion-contacto-direccion" class="icon-location float_right"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
@@ -26,8 +28,60 @@
 	<div id="fondo_secundario"></div>
 	
 	<section id="contenedor">
+		<div id="somos">
+			<div id="somos-contenedor" class="contenido_centrado">
+				<h3 class="texto_centrado">Somos una agrupación de música folklórica mexicana que atraves de los años se ha preparado con jóvenes de gran experiencia musical.</h3>
+				<h3 class="texto_centrado">Siendo  nuestro objetivo buscar siempre que todas las personas que nos brindan su confianza y nos honrran con su contratación tendran una exelente calidad musical y vocal.</h3>
+			</div>
+			<div id="somos-flecha"></div>
+
+			<hr />
+			<hr />
+		</div>
+		<div id="precios">
+			<div id="precios-contenedor" class="contenido_centrado">
+				<h4 class="texto_centrado">El número de elementos no disminuye la calidad musical e interpretativa.</h4>
+				<table id="precios-contenedor-tbl" class="texto_centrado float_center">
+					<thead>
+						<tr>
+							<td></td>
+							<td>10 canciones</td>
+							<td><div class="seleccionado-heder">por hora</div></td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="backgroundVerde_A"><span>5</span>integrantes<div class="muesca"></div></td>
+							<td>$1800</td>
+							<td>$2000</td>
+						</tr><tr>
+							<td class="backgroundVerde_B"><span>6</span>integrantes<div class="muesca"></div></td>
+							<td>$2000</td>
+							<td>$2300</td>
+						</tr><tr>
+							<td class="backgroundVerde_C"><span>7</span>integrantes<div class="muesca"></div></td>
+							<td>$2300</td>
+							<td>$2500</td>
+						</tr><tr>
+							<td class="backgroundVerde_D"><span>8</span>integrantes<div class="muesca"></div></td>
+							<td>$2500</td>
+							<td>$2800</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td></td>
+							<td></td>
+							<td><div class="seleccionado-footer"></div></td>
+						</tr>
+					</tfoot>
+				</table>
+				<p class="nota texto_centrado">*Los precios no aplican en días festivos.</p>
+				<p class="nota texto_centrado">**El trato es directo sin intermediarios, por eso le podemos ofrecer el mejor precio.</p>
+			</div>
+		</div>
 		<div id="repertorio">
-			<div id="repertorio-contenedor">
+			<div id="repertorio-contenedor" class="contenido_centrado">
 				<p class="justificado">Tenemos un amplio repertorio para su deleite…. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, rem harum necessitatibus rerum sequi iusto minima praesentium quis saepe blanditiis impedit molestias, quo dolores. Blanditiis architecto, praesentium voluptatibus ea eligendi!</p>
 				<p class="justificado">Contamos con: sones,valses, danzones, pasos dobles, cumbias, boleros, rancheras, polkas, huapangos, música clásica, corridos, norteñas, etc, etc.</p>
 				<ul>
@@ -85,7 +139,7 @@
 			</div>
 		</div>
 		<div id="contacto">
-			<div id="contacto-contenedor">
+			<div id="contacto-contenedor" class="contenido_centrado">
 				<p><strong>Contactanos</strong></p>
 				<form id="contacto-form" class="float_left">
 					<table id="contacto-form-tbl">
@@ -118,8 +172,9 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem voluptatibus blanditiis nostrum libero nam voluptate ea eos officiis, ab doloribus nemo, ducimus illum in veniam neque veritatis obcaecati sint impedit. </p>
 					<p>Teléfonos:</p>
 					<ul id="contacto-informacion-telefonos">
-						<li>(55) 5555 5555</li>
-						<li>(55) 5555 5555</li>
+						<li class="icon-phone">  (55) 6712 2398</li>
+						<li class="icon-mobile"> (044) 55 6620 0868</li>
+						<li class="icon-mobile"> (044) 55 3101 9665</li>
 					</ul>
 				</div>
 			</div>
